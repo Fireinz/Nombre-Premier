@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="fr.tp.nombrepremier.MainActivity" >
+
+    <Button
+        android:id="@+id/buttonJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:text="Execute Java" />
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Execute C" />
+
+    <EditText
+        android:id="@+id/nb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonJava"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:ems="10"
+        android:inputType="number" >   
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonJavaList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonJava"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Java LIST" />
+
+    <Button
+        android:id="@+id/buttonCList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonJavaList"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/buttonJavaList"
+        android:text="C LIST" />
+
+</RelativeLayout>
